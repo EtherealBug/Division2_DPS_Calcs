@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "division-2-dps-calculation",
+  "private_key_id": "d47d0da3121f840939571fb7d46b412ed43d92f2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0sM9NFKnHyTOA\n6WDQYZh5X6SzYReDE+oyyFxbI3Y17dl31vypPx8AhhgoiPpM4h1p4QZpwuAvmmQr\n+T5MyJxnZ9uYoe0pJqhJE5/p9nL0P9LJOEQ5qN93BQpFsS2fs9FCbHszkOQBY0M4\n3siPtiH8+6P+fzV2eRERM568e8W8/UP3x6RRAhR1z6vRCMOOkUssKDEznrZOHYzQ\nOHkmBDiCCA74FjnaBhzwRMOukOgKroAclKatFbaTSTELtLxq6pDtUm7jAFXWxHY6\nlGElyw3+bALT7RmddGl7S9bqHY6XuqaGASnxfNJiufdipUSANq5kUJbpnr35ouwZ\naRXkMTfzAgMBAAECggEAAnPR5Hhu03zaG5pPS5S/hoozSJH9STSofZb1lfEVxiab\nyIIc/MkUCSRIyKgPSaLaBlldBmt0MoE0cdpYq58fbFHfC6PK/b9+EjvXdEv5hHIn\nUL7YQjYWDl39pTOB7IR6xx2E0I7bYV9xBqETdMviizX5JFeiqKB9CFA8i89cQDPj\n7Q7qlaWFkas0ptJNH7MI29sld10y7fWuoV/1uuk+dbwEcaPjZOaLqWq9thq1Z6SL\nHEglw+FzAPBJk8yPe9PnhzReUShIUSrG8ruoFA41aVcTh3XMQJhuhL7HrTF4fIGv\nlAqgp2ospEA+ziggizSTPxEcRub1m9ldwu/4pGqhYQKBgQDusBNJVY1B1irsfnqW\n/Ml8gQeOhmp/zyvAKSG+Dzg7SYKDJAZCcgqGb//2xsK7wCDjnLYQW5hshVzdlp9z\nd0mywEoENkGrdtfI/dxyjmYXMd22FORdMfXIAJDrRKkfns95Bk5nqTi/Kxiv/AJ/\nKOinm1NyZJt8we9n0U9H8RxYIQKBgQDBy9nfWmaDtgNXj97rGCN0nizGN5bYMezh\ngH9REjMPNvH/DDtqJ/bSOxSOfzZa0GVj2k8asv4dMIUAHR6zeHs1D5Ab9BdQ4fvl\npLqTlbqYPfQTUbgXG7hyOpu3av0Wes/P5c8NGUJ51xrb71x9S3h9wBux06iYC4fi\nBItRy5L9kwKBgQDjjdnVQEq7SYMClFIrQDSXDiw2JM/Dqa78NDqHB9uEKkDS5bVS\nA4clRAGzMyrT9Adm+DBax/g4/avbVY4Odts8HzZxbYiN/28Zn2xbioap9lB5FtHg\nR5Eaa++9XGggTTdfGjQFf78qAdw3avq2YDnuEJctp9zUw8+KGnKLE8MCAQKBgFRY\n0R7xTaUN1y6JI9DW1LexEHPFRhYaxKrxLniunyKEG5eST1nIwxiFNlE+9P1Zrodj\nQQKx3P//WiPOiMo8KgPSHjrMZkmB0g0FQV9yz5/rdwvhiWolWoX9FEEkg7sBAOnP\nb+qXj+NPyBTpfSvbaTnyHxuqr7pdamro52pWXEeZAoGAZffHkrByoB+WBR/JNrZc\nT+5uxQz9APrLI63PgxCCxPPMSzkfozd08WPk0b38NvVjuwUETwftz1Efm8IBMJR9\nUEdvAzUKZMK8fHj23AoyVKG3YRd87j0hfFI1WyKqttYby652Vu6MtFFrYDmywRs9\nzeayGAj4XA4LbCZI4BR7+bs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jettiger@division-2-dps-calculation.iam.gserviceaccount.com",
+  "client_id": "102194504347775003886",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jettiger%40division-2-dps-calculation.iam.gserviceaccount.com"
+}
