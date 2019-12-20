@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[39]:
+# In[36]:
 
 
 import numpy as np
@@ -123,11 +123,11 @@ if strained=="y":
 else:
     st_dmg=0
 if fast_hands=="y":
-    rel_bonus=(truncate(crit_prob*RPM/60))
+    rel_bonus=(truncate(crit_prob*mag))
     if rel_bonus>30:
-        rel_bonus=30*0.05+reload_bonus
+        rel_bonus=30*0.05
     else:
-        rel_bonus=rel_bonus*0.05+reload_bonus
+        rel_bonus=rel_bonus*0.05
 if perforator=="y":
     add_talents=add_talents+20
 if p_finisher=="y":
@@ -140,14 +140,14 @@ if CHC>60:
     CHC=60
 add_talents_bns=(1+(add_talents/100))*wep_base_dmg
 fin_base_dmg=base_dmg+add_talents_bns
-rel_bonus=reload*reload_bonus
+rel_bonus=rel_bonus+reload_bonus
 rel_speed_final=reload-rel_bonus #reload speed with reload speed reduction bonuses
 
 dmg_shot=(fin_base_dmg*(1+((HSD*HSR)+CHD*crit_prob)/100)*(1+(DTE)/100)*(1+(OOC)/100)*(1+(EAD)/100)*(1+(HD)/100))+(1*talents/100)+merciless_passive
 
 DPS=dmg_shot*RPM/60
 
-t_rel=(mag/(RPM/10)) #time to empty magazine
+t_rel=(mag/(RPM/60)) #time to empty magazine
 dps_cycle=t_rel+rel_speed_final #time to empty magazine and then complete a reload, in seconds
 cycle_ct=f_dur/dps_cycle #number of dps cycles in time=f_dur
 t_reloads=cycle_ct*rel_speed_final #total time spent reloading over f_dur
@@ -162,10 +162,10 @@ print("\nAverage Dmg per Shot = ",end="")
 print ("{0:,.1f}".format(dmg_shot))
 
 ### NEEDS FIXING ###
-#print("\nTotal damage dealt over specified duration = ",end="")
-#print ("{0:,.1f}".format(tot_dmg))
-#print("Average DPS over specified duration = ",end="")
-#print ("{0:,.1f}".format(avg_dps))
+print("\nTotal damage dealt over specified duration = ",end="")
+print ("{0:,.1f}".format(tot_dmg))
+print("Average DPS over specified duration = ",end="")
+print ("{0:,.1f}".format(avg_dps))
 
 print("\nAssumptions:")
 if elite=="y":
@@ -177,5 +177,6 @@ if armor=="y":
     print("\t(3) Enemy is armored")
 else:
     print("\t(3) Enemy is unarmored")
+    
 get_ipython().system('jupyter nbconvert --to script Division_2_DPS_Calcs.ipynb')
 
