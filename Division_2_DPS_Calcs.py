@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[36]:
+# In[81]:
 
 
 import numpy as np
@@ -155,28 +155,40 @@ dps_time=f_dur-t_reloads #time spent dealing DPS over f_dur accounting for time 
 tot_dmg=DPS*dps_time #total damage dealt over f_dur
 avg_dps=tot_dmg/f_dur #average DPS over d_dur accounting for reloads
 
-print("Average DPS = ",end="")
-print ("{0:,.1f}".format(DPS))
-print("Note: This does not take into account loss of damage output due to reloading")
-print("\nAverage Dmg per Shot = ",end="")
-print ("{0:,.1f}".format(dmg_shot))
 
-### NEEDS FIXING ###
-print("\nTotal damage dealt over specified duration = ",end="")
-print ("{0:,.1f}".format(tot_dmg))
-print("Average DPS over specified duration = ",end="")
-print ("{0:,.1f}".format(avg_dps))
+class color:
+   PURPLE = '\033[95m'
+   CYAN = '\033[96m'
+   DARKCYAN = '\033[36m'
+   BLUE = '\033[94m'
+   GREEN = '\033[92m'
+   YELLOW = '\033[93m'
+   RED = '\033[91m'
+   BOLD = '\033[1m'
+   UNDERLINE = '\033[4m'
+   END = '\033[0m'
 
-print("\nAssumptions:")
+print(color.BOLD + "Average DPS = ",end="")
+print (color.RED + "{0:,.1f}".format(DPS))
+print(color.END + "\t**Note: This does not take into account loss of damage output due to time spent reloading**" + color.END)
+print(color.BOLD + "\nAverage Dmg per Shot = ",end="")
+print (color.BLUE + "{0:,.1f}".format(dmg_shot) + color.END)
+print(color.BOLD + "\nTotal damage dealt over specified duration = ",end="")
+print (color.BLUE + "{0:,.1f}".format(tot_dmg) + color.END)
+print(color.BOLD + "Average DPS over specified duration = ",end="")
+print (color.RED + "{0:,.1f}".format(avg_dps) + color.END)
+print("\t**Note: This takes into account loss of damage output due to time spent reloading**")
+
+print(color.BOLD + "\nAssumptions:")
 if elite=="y":
-    print("\t(1) Enemy is elite")
+    print(color.YELLOW + "\t(1) Enemy is elite")
 else:
-    print("\t(1) Enemy is not elite")
-print("\t(2) All talents are proc'd")
+    print(color.RED + "\t(1) Enemy is not elite")
+print(color.CYAN + "\t(2) All talents are proc'd")
 if armor=="y":
-    print("\t(3) Enemy is armored")
+    print(color.PURPLE + "\t(3) Enemy is armored")
 else:
-    print("\t(3) Enemy is unarmored")
+    print(color.RED + "\t(3) Enemy is unarmored")
     
 get_ipython().system('jupyter nbconvert --to script Division_2_DPS_Calcs.ipynb')
 
